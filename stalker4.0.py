@@ -35,7 +35,6 @@ def MenuInicial():
     LogoCero()
     sleep(1.5)
     sleep(0.60)
-    Carga()
     print(Fore.GREEN + "\t\tBienvenido a Stalker Face\t\t")
     print("\t\t__________________________\t\t")
     print("\t\t MENU \t\t")
@@ -50,7 +49,6 @@ def MenuSecundario():
     LogoOne()
     print("\t\t Bienvenido a InFo-FaSe Facebook OpErs \t\t")
     print("\t\t ____________________ \t\t")
-    Carga()
     print("\t\t\t Menu")
     print(Fore.BLUE + "___________________________")
     print("***PERFIL***")
@@ -136,7 +134,6 @@ def main():
             #sleep(1)
             #print(1)
             print("Las siguientes Funciones se ejecutaran")
-            Carga()
             try:
                 txt = open("funciones.txt", "r")
                 for funciones in txt:
