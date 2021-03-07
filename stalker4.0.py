@@ -4,7 +4,6 @@ import os #leer y escribir archivos
 from time import sleep
 import sys #usaremos sys.exit()
 from form.logo import LogoTwo, LogoCero, LogoOne #importamos nuestro logo.py
-from tqdm import tqdm
 from colorama import Back, Fore, init
 init()
 
@@ -18,14 +17,6 @@ def limpiar():
 		os.system('cls')
 	else:
 		os.system('clear')
-
-
-def Carga():
-    loop = tqdm(total=50000, position=0, leave=False)
-    for k in range(50000):
-        loop.set_description("Loading .....".format(k))
-        loop.update(1)
-    loop.close()
 
 def MenuInicial():
     os.system('clear')
